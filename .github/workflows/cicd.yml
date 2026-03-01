@@ -1,0 +1,40 @@
+#Workflow Name
+name: CICD
+
+#Workflow Trigger: Manual
+on:
+  workflow_dispatch: 
+
+#Jobs
+jobs:
+
+  #Job 1:
+  code: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        run: echo "clonning code"
+  
+  #Job 2:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: build the code
+        run: echo "building code"
+  
+  #Job 3:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test the code
+        run: echo "testing the code"
+  
+  #Job 3: 
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy the code
+        run: echo "deploying the code"
+
+
+    
