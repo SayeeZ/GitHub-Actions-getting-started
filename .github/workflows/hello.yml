@@ -1,0 +1,21 @@
+#This is workflow name
+name: Hello Workflow
+
+on:
+  push:
+    branches: [main]
+
+#These are jobs inside workflow
+jobs:
+
+#Name of the job
+  greet:
+  #This is the GithHub runner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello to user
+        run: echo "Hello World"
+
+      - name: Say hello to username
+        run: echo "Hello $USER"
+    
