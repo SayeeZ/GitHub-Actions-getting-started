@@ -1,0 +1,18 @@
+#Workflow name
+name: hello to self
+
+#Workflow trigger
+on:
+  push: 
+    branches: [main]
+
+#Workflow Jobs
+
+#Job name
+greet:
+
+#GitHub runner
+runs-on: ubuntu-latest
+steps:
+  -name: say hello to self
+  run: echo "Hello Sayee"
