@@ -3,8 +3,7 @@ name: hello to self
 
 #Workflow trigger
 on:
-  push:
-    branches: [main]
+  workflow_dispatch: 
 
 #Workflow Jobs
 jobs:
