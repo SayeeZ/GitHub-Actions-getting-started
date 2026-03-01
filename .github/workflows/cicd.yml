@@ -3,7 +3,17 @@ name: CICD
 
 #Workflow Trigger: Manual
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
+    inputs:
+      environments:
+        description: This is the enviroment where the workflow runs
+        default: 'dev'
+        required: true
+        type: choice
+        options: 
+          - dev
+          - stagging
+          - prod
 
 #Jobs
 jobs:
