@@ -1,35 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sayee | DevOps Portfolio</title>
+
+<style>
+
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", sans-serif;
+}
+
+/* Background */
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: linear-gradient(135deg,#0f172a,#1e293b,#020617);
+color:white;
+}
+
+/* Main Card */
+.container{
+text-align:center;
+max-width:900px;
+padding:50px;
+border-radius:20px;
+background: rgba(255,255,255,0.05);
+backdrop-filter: blur(10px);
+box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+animation: fadeIn 1.5s ease;
+}
+
+/* Title */
+h1{
+font-size:48px;
+margin-bottom:15px;
+letter-spacing:1px;
+}
+
+/* Highlight */
+.highlight{
+color:#38bdf8;
+}
+
+/* Subtitle */
+.subtitle{
+font-size:20px;
+opacity:0.8;
+margin-bottom:40px;
+}
+
+/* Skills Section */
+.skills{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+/* Skill Cards */
+.skill-card{
+padding:15px 25px;
+border-radius:10px;
+background:rgba(255,255,255,0.08);
+transition: all 0.3s ease;
+cursor:pointer;
+}
+
+/* Hover Animation */
+.skill-card:hover{
+transform: translateY(-8px) scale(1.05);
+background:#38bdf8;
+color:black;
+box-shadow:0 10px 25px rgba(56,189,248,0.6);
+}
+
+/* Contact Button */
+.contact-btn{
+margin-top:40px;
+display:inline-block;
+padding:14px 28px;
+border-radius:30px;
+background:#38bdf8;
+color:black;
+font-weight:bold;
+text-decoration:none;
+transition:all 0.3s ease;
+}
+
+/* Button Hover */
+.contact-btn:hover{
+transform:scale(1.08);
+background:white;
+box-shadow:0 0 20px rgba(56,189,248,0.8);
+}
+
+/* Footer */
+footer{
+margin-top:40px;
+font-size:14px;
+opacity:0.6;
+}
+
+/* Animation */
+@keyframes fadeIn{
+from{
+opacity:0;
+transform: translateY(40px);
+}
+to{
+opacity:1;
+transform: translateY(0);
+}
+}
+
+</style>
 </head>
 
 <body>
 
-    <h1>Hello, I'm Sayee</h1>
+<div class="container">
 
-    <p>Welcome to my portfolio website.</p>
+<h1>Hello, I'm <span class="highlight">Sayee</span></h1>
 
-    <p>
-        I am passionate about technology and enjoy learning about 
-        DevOps, cloud computing, and software development.
-    </p>
+<p class="subtitle">
+DevOps Enthusiast • Cloud Learner • CI/CD Builder
+</p>
 
-    <h2>What I Do</h2>
-    <ul>
-        <li>DevOps & CI/CD</li>
-        <li>Docker & Cloud</li>
-        <li>Software Development</li>
-    </ul>
+<div class="skills">
 
-    <h2>Contact</h2>
-    <p>Email: sayee@example.com</p>
+<div class="skill-card">Docker</div>
 
-    <footer>
-        <p>© 2026 Sayee</p>
-    </footer>
+<div class="skill-card">CI/CD Pipelines</div>
+
+<div class="skill-card">GitHub Actions</div>
+
+<div class="skill-card">Cloud (AWS)</div>
+
+<div class="skill-card">Linux</div>
+
+<div class="skill-card">Automation</div>
+
+</div>
+
+<a class="contact-btn" href="#">Connect With Me</a>
+
+<footer>
+© 2026 Sayee • Built with HTML & CSS
+</footer>
+
+</div>
 
 </body>
 </html>
