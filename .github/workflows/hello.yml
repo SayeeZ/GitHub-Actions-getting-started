@@ -18,4 +18,10 @@ jobs:
 
       - name: Say hello to username
         run: echo "Hello $USER"
-    
+  #Name of Job
+  details:
+  #Every Job needs a runner
+    runs-on: ubuntu-latest
+    steps:
+      - name: show what is the version of python
+        run: docker --version && python --version   
