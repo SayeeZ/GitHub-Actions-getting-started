@@ -16,7 +16,8 @@ jobs:
         run: echo "clonning code"
   
   #Job 2:
-  build: 
+  build:
+    needs: [code]
     runs-on: ubuntu-latest
     steps:
       - name: build the code
@@ -24,6 +25,7 @@ jobs:
   
   #Job 3:
   test:
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: test the code
@@ -31,6 +33,7 @@ jobs:
   
   #Job 3: 
   deploy:
+    needs: [test]
     runs-on: ubuntu-latest
     steps:
       - name: deploy the code
